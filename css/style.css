@@ -1,0 +1,427 @@
+/**************************************************************************************
+******************                                                   ******************
+******************                 Variable                          ******************
+******************                                                   ******************
+**************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/**************************************************************************************
+******************                                                   ******************
+******************                 HEARDER  customized               ******************
+******************                                                   ******************
+**************************************************************************************/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  margin: 0;
+  padding: 0;
+  background-image: url(/img/photo-1417716146732-918825b83fa0.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: -20px 30px 50px;
+          box-shadow: -20px 30px 50px;
+  justify-items: center;
+}
+
+header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.787);
+  background-attachment: fixed;
+  justify-items: center;
+}
+
+header .logo img {
+  width: 100px;
+  height: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .title-name {
+  color: #dd6616;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: 'Monoton', cursive;
+  font-weight: 400;
+  line-height: 100px;
+}
+
+header nav {
+  position: fixed;
+  background-color: black;
+  margin-top: 80px;
+  width: 50%;
+  right: -111%;
+  top: 0;
+  text-align: center;
+  line-height: normal;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  z-index: 99999;
+}
+
+header nav ul {
+  background-color: rgba(16, 17, 17, 0.876);
+  height: 36vh;
+}
+
+header nav ul a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: aliceblue;
+  font-size: 15px;
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+header #chk {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+header #chk:checked ~ .menu {
+  right: 0;
+}
+
+header .show-btn {
+  font-size: 30px;
+  color: #dd6616;
+}
+
+header .hide-btn {
+  font-size: 30px;
+  color: #fd0000;
+  position: absolute;
+  top: 50px;
+  right: 40px;
+}
+
+header .hide-btn {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 30px;
+}
+
+/**************************************************************************************
+******************                                                   ******************
+******************                 MAIN  customized                  ******************
+******************                                                   ******************
+**************************************************************************************/
+/*+++++++++++++++++++++++++
++++++ Product section +++++
+++++++++++++++++++++++++++*/
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.products h2 {
+  font-size: 30px;
+  font-family: 'Faster One', cursive;
+}
+
+.products-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.products-menu div:nth-child(even) {
+  color: aliceblue;
+  font-size: 10px;
+  padding: 10px;
+  background-color: black;
+}
+
+.products-menu div {
+  width: 25%;
+  color: aliceblue;
+  font-size: 10px;
+  padding: 10px;
+  background-color: #2e2d2d;
+  text-transform: uppercase;
+  border: solid 1px #412323;
+  font-family: 'Anton', sans-serif;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.main-texte {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-texte p {
+  text-align: center;
+  font-size: 12px;
+  color: rgba(80, 73, 73, 0.918);
+}
+
+.button-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button-view button {
+  color: #dd6616;
+  border: 1px solid white;
+  background-color: white;
+}
+
+/*+++++++++++++++++++++++++
++++++ About us section ++++
+++++++++++++++++++++++++++*/
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 30px;
+  font-family: 'Faster One', cursive;
+}
+
+.about-us {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #2e2d2d;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-us div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 33.33%;
+  color: aliceblue;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-us div:nth-child(even) {
+  color: aliceblue;
+  font-size: 10px;
+  padding: 10px;
+  background-color: black;
+}
+
+.about-us div p {
+  font-size: 10px;
+  margin: 0;
+  text-align: center;
+  font-family: 'PT Sans Narrow', sans-serif;
+  letter-spacing: 2px;
+}
+
+.about-us div i {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #39941e;
+}
+
+/*+++++++++++++++++++++++++
++++++   news  section +++++
+++++++++++++++++++++++++++*/
+.news-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.news-btn div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0.75px solid #c0bbbb;
+  width: 140px;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5px;
+}
+
+.news-btn button {
+  background-color: white;
+  border: none;
+  font-size: 10px;
+}
+
+.news-btn .firt-btn, .news-btn .firt-btn button {
+  background-color: black;
+  color: aliceblue;
+}
+
+#carouselExampleControls {
+  margin-top: 20px;
+}
+
+#carouselExampleControls .carousel-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.carousel-item p {
+  margin: 0;
+}
+
+/*+++++++++++++++++++++++++
++++++ contact section +++++
++++++++++++++++++++++++++*/
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 50px;
+  background-image: url(/img/5.jpeg);
+  background-size: cover;
+  width: 100%;
+  height: 75vh;
+}
+
+.contact div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  height: 15vh;
+  background-color: rgba(19, 46, 1, 0.877);
+  border: 0.03px solid rgba(25, 46, 12, 0.829);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact div p {
+  text-align: center;
+}
+
+.contact div h3, .contact div p {
+  margin: 0;
+  color: white;
+}
+
+.contact .big-items {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-color: rgba(0, 0, 0, 0.842);
+  width: 100%;
+  height: 45vh;
+}
+
+.contact .big-items img {
+  width: 50px;
+  height: 50px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.contact .big-items h3 {
+  margin-top: 10px;
+  font-family: 'Anton', sans-serif;
+  font-size: 30px;
+}
+
+.contact .big-items .small-p {
+  font-size: 10px;
+}
+
+.contact .last-items {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

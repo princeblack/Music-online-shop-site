@@ -1,0 +1,313 @@
+/**************************************************************************************
+******************                                                   ******************
+******************                 Variable                          ******************
+******************                                                   ******************
+**************************************************************************************/
+$colheader: rgb(221, 102, 22);
+$h2size:30px;
+$main-menu-size:10px;
+$itembg:rgb(46, 45, 45);
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+/**************************************************************************************
+******************                                                   ******************
+******************                 HEARDER  customized               ******************
+******************                                                   ******************
+**************************************************************************************/
+header{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+    background-image: url(/img/photo-1417716146732-918825b83fa0.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    box-shadow: -20px 30px 50px; 
+    justify-items: center; 
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 80px;
+        background-color: rgba(0, 0, 0, 0.787);
+        background-attachment: fixed;
+        justify-items: center;
+    }
+    .logo img{
+        width: 100px;
+        height: 80px;
+        align-items: center;
+    }
+    .title-name{
+        color: rgb(221, 102, 22);
+        font-size: 20px;
+        text-transform: uppercase;
+        font-family: 'Monoton', cursive;
+        font-weight: 400;
+        line-height: 100px;
+    }
+    nav{
+        position: fixed;
+        background-color: rgb(0, 0, 0);
+        margin-top: 80px; 
+        width: 50%;
+        right: -111%;
+        top: 0;
+        text-align: center;
+        line-height: normal;
+        transition: 0.7s;
+        z-index: 99999;       
+        ul{
+            background-color: rgba(16, 17, 17, 0.876);
+            height: 36vh;            
+        }
+        ul a{
+            display: flex;
+            flex-direction: column;
+            color: aliceblue;
+            font-size: 15px;
+            padding: 15px;  
+            text-transform: uppercase;     
+        }
+    }   
+    #chk{
+        position:absolute;
+        visibility: hidden;
+        z-index: -1111;
+    }
+    #chk:checked ~.menu{
+        right: 0;
+    }
+    .show-btn{
+        font-size: 30px;
+        color: $colheader;
+    }
+    .hide-btn{
+        font-size: 30px;
+        color: rgb(253, 0, 0);
+        position: absolute;
+        top: 50px;
+        right: 40px;
+       
+    }
+    .hide-btn{
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        font-size: 30px;
+    }   
+}
+/**************************************************************************************
+******************                                                   ******************
+******************                 MAIN  customized                  ******************
+******************                                                   ******************
+**************************************************************************************/
+
+/*+++++++++++++++++++++++++
++++++ Product section +++++
+++++++++++++++++++++++++++*/
+.products{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    h2{
+        font-size: $h2size;
+        font-family: 'Faster One', cursive;
+    }
+}
+.products-menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    div:nth-child(even){
+        color: aliceblue;
+        font-size: $main-menu-size;
+        padding: 10px;
+        background-color: black;
+    }
+    div{
+        width: 25%;
+        color: aliceblue;
+        font-size: $main-menu-size;
+        padding: 10px;
+        background-color: $itembg;
+        text-transform: uppercase;
+        border: solid 1px rgb(65, 35, 35);
+        font-family: 'Anton', sans-serif;
+        font-weight: 100;
+        letter-spacing: 2px;
+        
+
+    }
+}
+.main-texte{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    p{
+        text-align: center;
+        font-size: 12px;
+        color: rgba(80, 73, 73, 0.918);
+    }
+}
+.button-view{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    button{
+        color: $colheader;
+        border: 1px solid white;
+        background-color: rgb(255, 255, 255);
+    }
+}
+/*+++++++++++++++++++++++++
++++++ About us section ++++
+++++++++++++++++++++++++++*/
+.section{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Faster One', cursive;
+}
+
+.about-us{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:$itembg;
+    justify-content: center;
+    
+    div{
+        display: flex;
+        flex-direction: column;
+        width:33.33% ;
+        color: aliceblue;
+        align-items: center;
+        justify-content: center;
+    }
+    div:nth-child(even){
+        color: aliceblue;
+        font-size: $main-menu-size;
+        padding: 10px;
+        background-color: black;
+    }
+    div p{
+        font-size:$main-menu-size;
+        margin: 0;
+        text-align: center;
+        font-family: 'PT Sans Narrow', sans-serif;
+        letter-spacing: 2px;
+
+    }
+    div i{
+        font-size: 50px;
+        margin-bottom: 10px;
+        color: rgb(57, 148, 30) ;
+    }  
+}
+
+/*+++++++++++++++++++++++++
++++++   news  section +++++
+++++++++++++++++++++++++++*/
+.news-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    div{
+        display: flex;
+        border: 0.75px solid rgb(192, 187, 187);        
+        width: 140px;
+        height: 50px;
+        justify-content: center;
+        margin: 5px;    
+    }
+    button{
+        background-color: white;
+        border: none;  
+        font-size: $main-menu-size;  
+    }
+    .firt-btn, .firt-btn button{
+        background-color: black;
+        color: aliceblue;
+    }
+}
+#carouselExampleControls{
+    margin-top: 20px;
+    .carousel-item{
+        display: flex;
+        flex-direction: column;        
+    }
+
+}
+.carousel-item p{
+    margin: 0;
+}
+
+/*+++++++++++++++++++++++++
++++++ contact section +++++
++++++++++++++++++++++++++*/
+.contact{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-top: 50px;
+    background-image: url(/img/5.jpeg);
+    background-size: cover;
+    width: 100%;
+    height: 75vh;
+    
+    div{
+        display: flex;
+        flex-direction: column;
+        width: 50%;        
+        height: 15vh;
+        background-color: rgba(19, 46, 1, 0.877);
+        border: 0.03px solid rgba(25, 46, 12, 0.829);
+        align-items: center;
+        p{
+            text-align: center;
+            
+        }
+        h3,p{
+            margin: 0;
+            color: white;
+        }
+        
+    }
+    .big-items{
+     align-self: flex-start;
+     background-color: rgba(0, 0, 0, 0.842);
+     width: 100%;
+     height: 45vh;
+     img{
+         width: 50px;
+         height: 50px;
+         margin-top: 7px;
+         margin-bottom: 7px;
+     }
+     h3{
+         margin-top: 10px;
+         font-family: 'Anton', sans-serif;
+         font-size: 30px;
+     }
+     .small-p{
+         font-size: 10px;
+     }
+    }
+    .last-items{
+        display: none;
+    }
+}
