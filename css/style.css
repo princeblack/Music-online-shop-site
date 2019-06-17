@@ -727,11 +727,26 @@ footer p {
     height: 200px;
   }
   .carousel {
-    height: 50vh;
+    z-index: 999999;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 80vh;
     width: 100%;
   }
+  .carousel .carousel-inner {
+    width: 50%;
+    height: 80vh;
+  }
   .carousel .carousel-item img {
-    height: 50vh;
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -743,43 +758,28 @@ footer p {
     display: none;
   }
   header nav {
-    position: relative;
-    background-color: rgba(16, 17, 17, 0.876);
-    margin-top: 40px;
-    width: 200px;
-    right: 0;
-    height: 50px;
-    text-align: center;
-    line-height: normal;
-    -webkit-transition: 0.7s;
-    transition: 0.7s;
-  }
-  header nav ul a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    color: white;
-    width: 20%;
-    height: 50px;
-    font-size: 10%;
-    margin: 20px;
-    background-color: rgba(67, 100, 35, 0.658);
-    border: 1px solid black;
-    -webkit-clip-path: polygon(0 0, 51% 22%, 100% 0, 100% 100%, 51% 74%, 0 100%);
-            clip-path: polygon(0 0, 51% 22%, 100% 0, 100% 100%, 51% 74%, 0 100%);
-    text-transform: uppercase;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 20px;
+    width: 50%;
+    right: 0;
+    height: 100px;
+    text-align: center;
+    line-height: normal;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
   }
   header nav ul {
+    background-color: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -794,38 +794,48 @@ footer p {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    height: 2vh;
+    height: 50px;
+  }
+  header nav ul a {
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    -webkit-clip-path: none;
+            clip-path: none;
+    font-family: Anton;
+    text-transform: uppercase;
+  }
+  header .menu a:hover {
+    color: green;
+    background-color: white;
   }
   header .show-btn, header .hide-btn {
     display: none;
   }
-  header .show-btn {
-    font-size: 40px;
+  header .menu .link-top {
+    position: relative;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 0;
+    margin-top: 10px;
+    left: 0;
+    -webkit-transform: translate(none);
+            transform: translate(none);
   }
-  header .hide-btn {
-    position: absolute;
-    top: 0vh;
-    right: 40px;
-    font-size: 40px;
-  }
-  header .menu a:hover,
-  header .show-btn:hover,
-  header .hide-bth:hover {
-    color: aqua;
-  }
-  header .menu a {
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-  }
-  header label i {
+  header .menu .link-top i {
+    text-align: center;
     color: white;
+    font-size: 20px;
+    padding: 5px;
   }
-  header #chk {
-    position: absolute;
-    visibility: hidden;
-  }
-  header #chk:checked ~ nav {
-    right: 0;
+  /*+++++++++++++++++++++++++
++++++      main       +++++
+++++++++++++++++++++++++++*/
+  .products-menu div {
+    width: 12.5%;
   }
 }
 /*# sourceMappingURL=style.css.map */
