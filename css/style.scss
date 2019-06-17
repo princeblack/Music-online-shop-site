@@ -49,27 +49,31 @@ header{
         justify-items: center;
     }
     .logo img{
-        width: 90px;
-        height: 80px;
+        width: 80px;
+        height: 100px;
         align-items: center;
     }
     .title-name{
+        margin-right: 20px;
         color: white;
-        font-size: 18px;
+        font-size: 15px;
         text-transform: uppercase;
         font-family: 'Monoton', cursive;
         font-weight: 400;
         line-height: 80px;
     }
-    .link-top{
-        position: absolute;  
-        top: 70px;  
-        left: 110px;          
+    .menu .link-top{        
+        margin: 0;
+        position: absolute;
+        top: 13vh;
+        left: 55%;
+        transform: translate(-50%, -50%);  
+           
         i{
+            text-align: center;
             color: white;
-            width: 40px;
-            margin: 0;
-            padding: 0;
+            font-size: 20px;
+            padding: 5px;
         }
     }
     nav{
@@ -96,7 +100,7 @@ header{
             margin: 20px;
             background-color: rgba(67, 100, 35, 0.658);
             border: 1px solid black;
-            border-radius: 50%;
+            clip-path: polygon(0 0, 51% 22%, 100% 0, 100% 100%, 51% 74%, 0 100%);
             text-transform: uppercase;     
         }
         ul{
@@ -148,9 +152,10 @@ header{
         display: flex;
         flex-direction: row;
         width: 100%;
-        height: 32vh;
+        height: 33vh;
+        background-color: rgba(8, 8, 8, 0.582);
+
         div{
-            background-color: rgba(0, 0, 0, 0.424);
             width: 50%;
             height:32vh; 
             text-align: center;
@@ -160,9 +165,11 @@ header{
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
+            margin-top: 70px;
         }
         .premium p{
-            color: rgb(32, 148, 51);
+            color: rgb(97, 216, 117);
             text-transform: uppercase;
             font-family: Slabo; 
             font-weight: 900;
@@ -170,12 +177,13 @@ header{
         }
         h4{
             color: white;
+            font-size: 30px;
             font-family: Anton;
             letter-spacing: 3px;            
             margin: 0;
         }
         span{
-            color: rgb(214, 209, 209);
+            color: rgb(238, 234, 234);
             text-align: center;
             font-size: 60%;
             margin: 0;
@@ -214,6 +222,7 @@ header{
     display: flex;
     margin-top: 50px;
     justify-content: center;
+    
     h2{
         font-size: $h2size;
         font-family: 'Faster One', cursive;
@@ -234,6 +243,9 @@ header{
         background-color: green;
     }
     div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 25%;
         color: aliceblue;
         font-size: $main-menu-size;
@@ -376,7 +388,7 @@ header{
         width: 50%;        
         height: 15vh;
         background-color: rgba(19, 46, 1, 0.877);
-        border: 0.09px solid rgba(25, 46, 12, 0.829);
+        border: 0.017px  groove rgba(19, 46, 1, 0.877);
         align-items: center;
         justify-content: center;
         p{
@@ -436,6 +448,7 @@ header{
 ******************                 footer customized                 ******************
 ******************                                                   ******************
 **************************************************************************************/
+
 footer{
     width: 100%;
     height: 25vh;
@@ -452,16 +465,124 @@ footer{
     }
     i{
         margin: 7px;
-        color: rgb(165, 165, 165);
+        color: rgb(109, 109, 109);
+        font-size: 150%
     }
     a{
-        font-size: 60%;
+        font-size: 80%;
         margin: 5px;
-        color: rgb(165, 165, 165);
+        color: rgb(109, 109, 109);
     }
     p{
-        font-size: 60%;
-        color: rgb(165, 165, 165);
+        font-size: 90%;
+        color: rgb(109, 109, 109);
 
     }
 }
+
+/**************************************************************************************
+******************                                                   ******************
+******************                 media screen                      ******************
+******************                                                   ******************
+**************************************************************************************/
+
+// Small devices (landscape phones, 500px and up)
+@media screen and (min-width:500px) { 
+    header{
+        height: 80vh;
+        .contaire{
+            height: 62vh;
+        }
+        .hd-image{
+
+            width: 100%;
+            height: 62vh;
+            .headphone{
+                margin-top: 45vh;
+                width: 100%;
+                height: 80vh;
+                
+            }
+    
+        }
+
+    }
+
+    .menu .link-top{        
+        position: absolute;  
+        top: 13vh;  
+        left: 500%;  
+           
+        i{
+            color: rgb(182, 26, 26);
+            font-size: 20px;
+            margin: 0;
+            padding: 10px;
+        }
+    }
+
+    .menu .title-name{
+        font-size: 30px;
+    }
+    .menu .logo img{
+        width: 100px;
+        height: 100px;
+        margin-left: 0;
+    }
+
+    .contaire {
+        .premium{
+            h4{
+                font-size: 50px;
+        
+            }
+
+        }
+        .premium .lorem{
+            font-size: 15px;
+        }
+        
+    }
+    .products-menu {
+        div , div:nth-child(even){
+            height: 150px;
+            font-size: 15px;
+        }
+  
+    }
+    .about-us div{
+        height: 200px;
+    }
+
+}
+
+
+// // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { 
+
+// }
+
+
+
+// // Medium devices (tablets, 768px and up)
+// @media only screen and (min-width: 764px){
+//     .menu .link-top{
+//         position: absolute;  
+//         top: 13vh;  
+                  
+//         i{
+//             color: rgb(104, 5, 5);
+//             font-size: 30px;           
+//         }
+//     }
+
+// }
+
+
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) {  }
+
+
+// // Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { }
+
