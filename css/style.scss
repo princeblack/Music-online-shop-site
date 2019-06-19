@@ -166,7 +166,7 @@ header{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-top: 70px;
+            margin-top: 7px;
         }
         .premium p{
             color: rgb(97, 216, 117);
@@ -242,7 +242,7 @@ header{
     .nav-link{
         background-color: green;
     }
-    div{
+    a{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -255,10 +255,10 @@ header{
         border: solid 1px rgb(24, 22, 22);
         font-family: 'Anton', sans-serif;
         font-weight: 100;
-        letter-spacing: 2px;
-        
+        letter-spacing: 2px;     
 
     }
+    a:active {color: rgb(10, 163, 23)}
 }
 .main-texte{
     margin-top: 10px;
@@ -534,6 +534,7 @@ footer{
 
     .contaire {
         .premium{
+
             h4{
                 font-size: 50px;
         
@@ -558,48 +559,31 @@ footer{
     .about-us div{
         height: 200px;
     }
+
+    .cont-carousel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient( rgba(0, 255, 255, 0.308), rgba(255, 0, 0, 0.287));
+        width: 100%;
+        height:50%;
+    }
     .carousel {
-        z-index: 999999;
+        z-index: 9999;
         display: flex !important;
         justify-content: center;
         align-items: center; 
-        height: 80vh;
-        width:100%;
-        .carousel-inner{
-            width: 50%;
-            height: 80vh;
-        }
-        .carousel-item img{
-            height:100%;
-            width: 100%;
-        }
+        height:50%;
+        width:50%;
+    .carousel-item {
+        width: 100%;        
+    }
+
     }
    
 
 }
-
-
-// // Small devices (landscape phones, 576px and up)
-// @media (min-width: 576px) { 
-
-// }
-
-
-
-// // Medium devices (tablets, 768px and up)
-// @media only screen and (min-width: 764px){
-//     .menu .link-top{
-//         position: absolute;  
-//         top: 13vh;  
-                  
-//         i{
-//             color: rgb(104, 5, 5);
-//             font-size: 30px;           
-//         }
-//     }
-
-// }
-
 
 // Large devices (desktops, 992px and up)
 @media screen and (min-width:900px) {
@@ -671,17 +655,20 @@ footer{
                 padding: 5px;
             }
         }
+        .contaire .premium{
+            margin-top: 70px;
+        }
     }
 
 /*+++++++++++++++++++++++++
 +++++      main       +++++
 ++++++++++++++++++++++++++*/  
-.products-menu{
-    div{
-        width: 12.5%;
-    }
-} 
-  }
+    .products-menu{
+        div{
+            width: 12.5%;
+        }
+    } 
+}
 
 
 
