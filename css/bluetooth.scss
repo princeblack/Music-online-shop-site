@@ -1,0 +1,32 @@
+.mother{
+    background-image: linear-gradient(red blue);}
+.container{
+    
+    .container-item  {
+        width: 35%;
+    }
+}
+/**************************************************************************************
+******************                                                   ******************
+******************                 media screen                      ******************
+******************                                                   ******************
+**************************************************************************************/
+
+// Small devices (landscape phones, 500px and up)
+@media screen and (min-width:500px) { 
+    .container{
+    
+        .container-item  {
+            width: 25%;
+        }
+    }
+}
+// Small devices (landscape phones, 700px and up)
+@media screen and (min-width:900px) { 
+    .container{
+    
+        .container-item  {
+            width: 20%;
+        }
+    }
+}

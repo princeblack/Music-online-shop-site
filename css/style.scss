@@ -52,6 +52,7 @@ header{
         width: 80px;
         height: 100px;
         align-items: center;
+        cursor: pointer;
     }
     .title-name{
         margin-right: 20px;
@@ -258,7 +259,12 @@ header{
         letter-spacing: 2px;     
 
     }
-    a:active {color: rgb(10, 163, 23)}
+    a:hover {
+        color: rgb(255, 255, 255);
+        background-color: rgb(138, 98, 34);
+        text-decoration: none;
+      
+    }
 }
 .main-texte{
     margin-top: 10px;
@@ -550,13 +556,13 @@ footer{
 +++++      main       +++++
 ++++++++++++++++++++++++++*/
     .products-menu {
-        div , div:nth-child(even){
+        a, a:nth-child(even){
             height: 150px;
             font-size: 15px;
         }
   
     }
-    .about-us div{
+    .about-us a{
         height: 200px;
     }
 
@@ -585,7 +591,7 @@ footer{
 
 }
 
-// Large devices (desktops, 992px and up)
+// Large devices (desktops, 900px and up)
 @media screen and (min-width:900px) {
 
 /*+++++++++++++++++++++++++
@@ -632,6 +638,7 @@ footer{
 
 
         }  
+
         .menu a:hover{
             color: green;
             background-color: white;
@@ -664,8 +671,14 @@ footer{
 +++++      main       +++++
 ++++++++++++++++++++++++++*/  
     .products-menu{
-        div{
+        a{
             width: 12.5%;
+            font-size:100%;
+            letter-spacing: 4px;
+        }
+        a, a:nth-child(even){
+            height: 150px;
+            font-size: 100%;
         }
     } 
 }

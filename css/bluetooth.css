@@ -1,0 +1,26 @@
+.mother {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(blue, red));
+  background-image: linear-gradient(red blue);
+}
+
+.container .container-item {
+  width: 35%;
+}
+
+/**************************************************************************************
+******************                                                   ******************
+******************                 media screen                      ******************
+******************                                                   ******************
+**************************************************************************************/
+@media screen and (min-width: 500px) {
+  .container .container-item {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container .container-item {
+    width: 20%;
+  }
+}
+/*# sourceMappingURL=bluetooth.css.map */

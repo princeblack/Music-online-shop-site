@@ -65,6 +65,7 @@ header .logo img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 header .title-name {
@@ -347,8 +348,10 @@ header .hd-image .headphone {
   letter-spacing: 2px;
 }
 
-.products-menu a:active {
-  color: #0aa317;
+.products-menu a:hover {
+  color: white;
+  background-color: #8a6222;
+  text-decoration: none;
 }
 
 .main-texte {
@@ -723,11 +726,11 @@ footer p {
   /*+++++++++++++++++++++++++
 +++++      main       +++++
 ++++++++++++++++++++++++++*/
-  .products-menu div, .products-menu div:nth-child(even) {
+  .products-menu a, .products-menu a:nth-child(even) {
     height: 150px;
     font-size: 15px;
   }
-  .about-us div {
+  .about-us a {
     height: 200px;
   }
   .cont-carousel {
@@ -855,8 +858,14 @@ footer p {
   /*+++++++++++++++++++++++++
 +++++      main       +++++
 ++++++++++++++++++++++++++*/
-  .products-menu div {
+  .products-menu a {
     width: 12.5%;
+    font-size: 100%;
+    letter-spacing: 4px;
+  }
+  .products-menu a, .products-menu a:nth-child(even) {
+    height: 150px;
+    font-size: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
