@@ -94,6 +94,13 @@ header .menu .link-top i {
   padding: 5px;
 }
 
+header .dropdown-item:hover {
+  color: black !important;
+  background-color: #e2c080 !important;
+  border: 1px solid black;
+  border-radius: 50px 5px;
+}
+
 header nav {
   position: fixed;
   background-color: rgba(16, 17, 17, 0.876);
@@ -330,6 +337,12 @@ header .hd-image .headphone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -345,7 +358,6 @@ header .hd-image .headphone {
   border: solid 1px #181616;
   font-family: 'Anton', sans-serif;
   font-weight: 100;
-  letter-spacing: 2px;
 }
 
 .products-menu a:hover {
@@ -814,6 +826,7 @@ footer p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin: 0px;
     width: 100%;
     height: 50px;
   }
@@ -821,6 +834,7 @@ footer p {
     color: white;
     font-size: 20px;
     margin: 0px;
+    padding: 0px;
     background-color: rgba(0, 0, 0, 0);
     border: none;
     -webkit-clip-path: none;
@@ -840,7 +854,7 @@ footer p {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    margin: 0;
+    margin-left: 150px;
     margin-top: 10px;
     left: 0;
     -webkit-transform: translate(none);
@@ -852,6 +866,10 @@ footer p {
     font-size: 20px;
     padding: 5px;
   }
+  header .menu .link-top .btn-group button {
+    width: 80px;
+    font-size: 12px;
+  }
   header .contaire .premium {
     margin-top: 70px;
   }
@@ -860,12 +878,12 @@ footer p {
 ++++++++++++++++++++++++++*/
   .products-menu a {
     width: 12.5%;
-    font-size: 100%;
+    font-size: 90%;
     letter-spacing: 4px;
   }
-  .products-menu a, .products-menu a:nth-child(even) {
+  .products-menu a:nth-child(even) {
     height: 150px;
-    font-size: 100%;
+    font-size: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */
